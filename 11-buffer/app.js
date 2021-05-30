@@ -7,23 +7,6 @@ console.log(buf[0]); // 배열로 접근하면 아스키코드로 출력된다.
 console.log(buf[1]);
 console.log(buf.toString());
 
-/*
-toString(encoding?: BufferEncoding, start?: number, end?: number): string;
-> toString은 인코딩 형태를 옵션으로 줄수 있고, 기본형태는 utf8 이기 때문에 전달하지 않아도 된다.
-
-type BufferEncoding =
-| 'ascii'
-| 'utf8'
-| 'utf-8'
-| 'utf16le'
-| 'ucs2'
-| 'ucs-2'
-| 'base64'
-| 'latin1'
-| 'binary'
-| 'hex';
-*/
-
 // create
 const buf2 = Buffer.alloc(2); // size가 2개인 버퍼를 만든다.
 // alloc함수를 사용하면 메모리에서 사용가능한 메모리 덩어리를 찾아서 그 덩어리를 초기화 시켜준다.
